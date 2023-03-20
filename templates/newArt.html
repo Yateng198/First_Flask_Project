@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}{{ super() }} - Snow Storm{% endblock %}
+{% block contents %}
+    <div class="container my-5">
+        <h1 class="row-cols-1 mt-5 text-center">New Art Exhibit at the Museum</h1>
+        <h6 class="row-cols-1 mt-3 text-center">A new art exhibit featuring works by local artists will be opening at the museum this weekend. Don't miss it!</h6>
+        <h6 class="row-cols-1 mt-3 text-center">2022-12-14</h6>
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <img src="https://media.timeout.com/images/105548109/image.jpg" class="img-fluid mb-3" alt="Snow storm image">
+                <p class="lead">Montreal's Teccart School of Design is proud to announce its latest art exhibit, showcasing the talents of the school's students and alumni. The exhibit, titled "Emergence," will be on display at the school's affiliated museum, the Teccart Museum of Fine Arts, from Dec 21st to Jan 18th.</p>
+                <p>The exhibit features a diverse range of art forms, including painting, sculpture, digital art, and multimedia installations. The pieces on display represent the culmination of years of hard work and dedication from Teccart's art and design students, as well as some of the school's accomplished alumni.</p>
+                <p>"Emergence" explores the concept of growth and evolution, both in terms of individual artistic expression and the broader cultural landscape. The exhibit's curator, Teccart professor Dr. Isabelle Larivière, notes that the pieces on display are not only visually stunning, but also thought-provoking and intellectually stimulating.</p>
+                <p>"We're thrilled to showcase the work of our talented students and alumni in this exciting new exhibit," says Dr. Larivière. "These artists are pushing the boundaries of traditional art forms and exploring new ways to express themselves creatively."</p>
+                <p>The Teccart Museum of Fine Arts is located in the heart of Montreal's bustling downtown district, and admission to the exhibit is free and open to the public. Visitors are encouraged to engage with the art and participate in guided tours and interactive workshops.</p>
+                <p>Don't miss your chance to experience the dynamic and innovative art of Teccart's emerging artists at "Emergence," now on display at the Teccart Museum of Fine Arts.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Latest News
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="/news/snowstorm">Teccart School Closed Due to Snow Storm</a></li>
+                        <li class="list-group-item"><a href="/news/newart">New Art Exhibit at the Museum</a></li>
+                        <li class="list-group-item"><a href="#">New Computer Science Program Now Accepting Applications</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Contact Information
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Institut Teccart</strong></p>
+                        <p>3030 Hochelaga</p>
+                        <p>Montreal, QC H3Z 2Y7</p>
+                        <p>Phone: (514) 526-2501</p>
+                        <p>Email: info@teccart.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

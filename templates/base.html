@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        <title>{% block title %}Institut Teccart{% endblock %}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Font Awesome -->
+        <link
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+                href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+                rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+                href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+                rel="stylesheet"
+        />
+    {% endblock %}
+
+</head>
+<body>
+{% block header %}
+    <header>
+        <!-- Background image -->
+
+        <!-- NavBar Section -->
+        <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/static/logo1.jpeg" class="img-fluid" alt="" width="250px"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#"
+                               role="button"
+                               aria-expanded="false">Programs</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active"
+                                       href="/static/Electronique_industrielle_DEC.pdf">Industrial Electronics</a>
+                                </li>
+                                <li><a class="dropdown-item active" href="/static/Informatique_de_Gestion_AEC.pdf">IT
+                                    Management</a></li>
+                                <li><a class="dropdown-item active"
+                                       href="https://www.teccart.qc.ca/files/Telecommunications_DEC.pdf">Tele-Communications</a>
+                                </li>
+                                <li><a class="dropdown-item active"
+                                       href="https://www.teccart.qc.ca/files/Education_a_lEnfance_AEC.pdf">Children
+                                    Education</a></li>
+                                <li><a class="dropdown-item active"
+                                       href="https://www.teccart.qc.ca/files/Design_de_Mode_AEC.pdf">Fashion
+                                    Design</a></li>
+                                <li><a class="dropdown-item active"
+                                       href="https://www.teccart.qc.ca/files/Soutien_Informatique_%20AEC.pdf">Computer
+                                    Support</a></li>
+                                <li><a class="dropdown-item active"
+                                       href="https://www.teccart.qc.ca/files/Design_dInterieur_AEC.pdf">Interior
+                                    Design</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/organization">Organization</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/news">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/careers">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/contact">Contact Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- NavBar Section -->
+        <div
+                class="container p-5 text-center bg-image mt-3"
+                style="
+      background-image: url('https://www.teahub.io/photos/full/87-879470_computer-programming-coding-technology.jpg');
+      height: 100px;
+    "
+        >
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3">Welcome to Institut Teccart</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Background image -->
+    </header>
+{% endblock %}
+
+{% block contents %}
+
+    <div class="container">
+        <!-- Carousel component -->
+        <div id="demo" class="carousel slide mt-3" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="https://www.teccart.qc.ca/images/gallery/img11.png" alt="Anniversary" class="d-block"
+                         style="width:100%">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.teccart.qc.ca/images/gallery/img13.png" alt="Anniversary" class="d-block"
+                         style="width:100%">
+
+                </div>
+
+
+                <div class="carousel-item">
+                    <img src="	https://www.teccart.qc.ca/images/gallery/img10.jpg" alt="AEC conseil" class="d-block"
+                         style="width:100%">
+
+                </div>
+                <div class="carousel-item ">
+                    <img src="https://www.teccart.qc.ca/images/gallery/img1.png" alt="quality" class="d-block"
+                         style="width:100%">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <!-- Carousel component -->
+        <!-- Carousel -->
+
+        <div class="container-fluid mt-5 mb-5 bg-body">
+            <h3>Institute Teccart</h3>
+            <p>FOUNDED IN 1945, AND DECLARED OF PUBLIC INTEREST, THE INSTITUTE TECCART</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    Is a private technical college of college-level whose primary mission is to train a generation of
+                    competent people, capable of meeting the demands of the labor market and the pre-entry programs of
+                    colleges and universities;
+                </li>
+                <li class="list-group-item">
+                    Offers a variety of training and developing learning techniques adapted to the various
+                    characteristics of its students clients that the following values and principles underpinning:
+                    <ul>
+                        <li>continuous improvement of the quality of educational services;</li>
+                        <li>the integrity of the business process;</li>
+                        <li>rigorous process of certification of studies;</li>
+                        <li>looking for sound management in its relations with its partners and its staff;</li>
+                        <li>continuous updating of various technologies based on the recommendations of advisory
+                            committees representing different workplaces;
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-group-item">
+                    Emphasizes the personal and social development of its students in a spirit of openness, dialogue
+                    and global cooperation.
+                </li>
+            </ul>
+            <p class="mt-3">
+                The Teccart Institute is a learning and development location where the universal rights and freedoms are
+                respected. Open to the world, without elitist vision and admission to a high level of excellence of its
+                graduates the Institute Teccart is a college of choice, both in terms of technology and of design.
+            </p>
+        </div>
+
+        <!-- cards -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+
+                <div class="card h-100 hover-zoom">
+                    <a href="/static/Electronique_industrielle_DEC.pdf">
+                        <img src="/static/R.jpeg" class="card-img-top"
+                             alt="Skyscrapers"/>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Technology and Computing</h5>
+                        <p class="card-text">
+                            Determined to maintain its status as a leader in training of technical computing, of
+                            telecommunications and industrial electronics (robotics), the Teccart Institute offers
+                            training programs that meet the industry requirements of today, come see our new class
+                            of robotics to convince you!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="card h-100 hover-zoom">
+                    <a href="/static/Design_de_Mode_AEC.pdf">
+                        <img src="/static/fashion-design-student-2.jpg" class="card-img-top"
+                             alt="Los Angeles Skyscrapers"/>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Fashion, Design and Arts</h5>
+                        <p class="card-text">The Teccart Institute, through its Design Academy of Arts and Design
+                            School, offers you a chance to express your talent and perform a career in exciting
+                            fields. Through comprehensive training offered by reputable professionals, the Academy
+                            offers several design programs with equipment and software at the cutting edge of
+                            technology in a modern and unique campus!</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="card h-100 hover-zoom">
+                    <a href="/static/Education_a_lEnfance_AEC.pdf">
+                        <img src="/static/cahier-ecc81ducation-enfance_c100.webp" class="card-img-top"
+                             alt="Los Angeles Skyscrapers"/>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Education Techniques for Children</h5>
+                        <p class="card-text">The teacher or children educator works with children aged between 0 and
+                            12 years. Upon contact with the workplace, he or she is called to meet the basic needs
+                            of the child. To do this, he or she must ensure the safety of the child, assess the
+                            needs of the latter (hygiene, comfort, sleep, food), give it the proper care and assess
+                            the appropriateness of interventions.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- cards -->
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-12 mt-5">
+                <div
+                        class="bg-image hover-zoom ripple shadow-1-strong rounded mt-3"
+                        data-ripple-color="light"
+                >
+                    <img
+                            src="/static/call-center-shutterstock_323270924-1024x683.jpg"
+                            class="w-100"
+                    />
+                    <a href="#!">
+                        <div
+                                class="mask"
+                                style="background-color: rgba(251, 251, 251, 0.2);"
+                        ></div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mt-3">
+                <h4>Institut Teccart</h4>
+                <p>
+                    Operating in Quebec for more than sixty years, the TECCART Institute is a subsidized private college
+                    that offers quality programs in technical training at the college level. Firstly, in the sectors of
+                    new information and communication technologies (NICT) and industrial electrical engineering
+                    technologies, leading to obtaining a DEC and / or AEC.<br/>
+                    In 2007, the TECCART Institute acquired the Academy of Arts and Design (AAD), adding training
+                    programs in fashion design and trade, interior design, advertising design and fashion design. 3d
+                    animation.<br/>
+                    In 2010, the Institute introduced new training programs in child education techniques, legal
+                    techniques, real estate brokerage and insurance.
+                </p>
+            </div>
+            <div class="col-md-4 mt-5">
+                <p>
+                    These programs, leading to an ACS, allow students to enter the job market very quickly.<br/>
+                    The recognized excellence of the training offered at the TECCART Institute is based on practical
+                    technical training, combined with a general education adapted by a promising approach to academic
+                    success and integration. All programs offered at the TECCART institute are recognized for the
+                    purpose of student financial assistance.<br/>
+
+                    Training language :<br/>
+
+                    All programs are offered in French and some are offered in English if enough students are
+                    enrolled.<br/>
+
+                    For the 2018 Summer session the programs offered in English are the AEC in Real Estate Brokerage and
+                    in Paralegal Technology.<br/>
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block footer %}
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                    <!-- Left -->
+                    <div class="me-5 d-none d-lg-block">
+                        <span>Get connected with us on social networks:</span>
+                    </div>
+                    <!-- Left -->
+
+                    <!-- Right -->
+                    <div>
+                        <a href="https://www.facebook.com/teccart" class="me-4 text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/InstitutTeccart" class="me-4 text-reset">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <!-- Right -->
+
+                </section>
+                <!-- Section: Social media -->
+                <!-- Section: Links  -->
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            MISSION OF THE INSTITUTE TECCART
+                        </h6>
+                        <ul>
+                            <li>
+                                Continuous improvement of the quality of educational services;
+                            </li>
+                            <li>
+                                The integrity of the business process;
+                            </li>
+                            <li>
+                                Rigorous process of certification of studies;
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="fw-bold mb-4">
+                            Policy Documents
+                        </h6>
+                        <p>
+                            <a href="https://www.teccart.qc.ca/files/Politique_relative_a_la_lague_francaise.pdf"
+                               class="text-reset">Policy On Employment</a>
+                        </p>
+                        <p>
+                            <a href="https://www.teccart.qc.ca/files/PIA-SEPTEMBRE2009.pdf" class="text-reset">Institutional
+                                Evaluations</a>
+                        </p>
+                        <p>
+                            <a href="https://www.teccart.qc.ca/files/Plan%20de%20reussite%202007-2011.pdf"
+                               class="text-reset">Institutional Success</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Admissions
+                        </h6>
+                        <p>
+                            <a href="https://www.teccart.qc.ca/quebec_students.php" class="text-reset">Quebec
+                                Students</a>
+                        </p>
+                        <p>
+                            <a href="https://www.teccart.qc.ca/canadian_students.php" class="text-reset">Canada
+                                Students</a>
+                        </p>
+                        <p>
+                            <a href="https://www.teccart.qc.ca/international_students.php" class="text-reset">International
+                                Students</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> 3030 Hochelaga, Montréal</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@teccart.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +1-514-526-2501</p>
+                        <p><i class="fas fa-print me-3"></i> +1-514-526-2501</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Images -->
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div
+                                class="bg-image hover-zoom ripple shadow-1-strong rounded"
+                                data-ripple-color="light"
+                        >
+                            <img
+                                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
+                                    class="w-100"
+                            />
+                            <a href="#!">
+                                <div
+                                        class="mask"
+                                        style="background-color: rgba(251, 251, 251, 0.2);"
+                                ></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div
+                                class="bg-image hover-zoom ripple shadow-1-strong rounded"
+                                data-ripple-color="light"
+                        >
+                            <img
+                                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
+                                    class="w-100"
+                            />
+                            <a href="#!">
+                                <div
+                                        class="mask"
+                                        style="background-color: rgba(251, 251, 251, 0.2);"
+                                ></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div
+                                class="bg-image hover-zoom ripple shadow-1-strong rounded"
+                                data-ripple-color="light"
+                        >
+                            <img
+                                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+                                    class="w-100"
+                            />
+                            <a href="#!">
+                                <div
+                                        class="mask"
+                                        style="background-color: rgba(251, 251, 251, 0.2);"
+                                ></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div
+                                class="bg-image hover-zoom ripple shadow-1-strong rounded"
+                                data-ripple-color="light"
+                        >
+                            <img
+                                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
+                                    class="w-100"
+                            />
+                            <a href="#!">
+                                <div
+                                        class="mask"
+                                        style="background-color: rgba(251, 251, 251, 0.2);"
+                                ></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div
+                                class="bg-image hover-zoom ripple shadow-1-strong rounded"
+                                data-ripple-color="light"
+                        >
+                            <img
+                                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+                                    class="w-100"
+                            />
+                            <a href="#!">
+                                <div
+                                        class="mask"
+                                        style="background-color: rgba(251, 251, 251, 0.2);"
+                                ></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div
+                                class="bg-image hover-zoom ripple shadow-1-strong rounded"
+                                data-ripple-color="light"
+                        >
+                            <img
+                                    src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+                                    class="w-100"
+                            />
+                            <a href="#!">
+                                <div
+                                        class="mask"
+                                        style="background-color: rgba(251, 251, 251, 0.2);"
+                                ></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Images -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="container text-start p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Institut Teccart by RespectMedia</a>
+        </div>
+        <!-- Copyright -->
+
+
+    </footer>
+{% endblock %}
+<!-- Footer -->
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}{{ super() }} - Snow Storm{% endblock %}
+{% block contents %}
+    <div class="container my-5">
+        <h1 class="row-cols-1 mt-5 text-center">Snow Storm Closure</h1>
+        <h6 class="row-cols-1 mt-3 text-center">Teccart School Closed Due to Severe Snow Storm</h6>
+        <h6 class="row-cols-1 mt-3 text-center">2023-01-05</h6>
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <img src="https://th.bing.com/th/id/R.1132e0bccfe457d539efe7c7ece4bed1?rik=ujKPl3z7vEhMxw&pid=ImgRaw&r=0" class="img-fluid mb-3" alt="Snow storm image">
+                <p class="lead">Teccart School will be closed today due to the snow storm that hit the area yesterday evening. The school administration has announced that all classes and activities will be cancelled, and the campus will remain closed until further notice.</p>
+                <p>The snow storm brought heavy snowfall and strong winds, causing many roads and sidewalks to become treacherous and difficult to navigate. In addition, the school's heating system was affected by the storm, making it impossible to maintain a safe and comfortable learning environment.</p>
+                <p>The school administration urges all students, faculty, and staff to stay home and avoid unnecessary travel until the roads are cleared and conditions improve. Updates regarding the school's reopening will be posted on the school's website and social media channels as they become available.</p>
+                <p>Teccart School would like to remind everyone to stay safe and warm during this difficult time, and to take all necessary precautions when venturing outside.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Latest News
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="/news/snowstorm">Teccart School Closed Due to Snow Storm</a></li>
+                        <li class="list-group-item"><a href="/news/newart">New Art Exhibit at the Museum</a></li>
+                        <li class="list-group-item"><a href="#">New Computer Science Program Now Accepting Applications</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Contact Information
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Institut Teccart</strong></p>
+                        <p>3030 Hochelaga</p>
+                        <p>Montreal, QC H3Z 2Y7</p>
+                        <p>Phone: (514) 526-2501</p>
+                        <p>Email: info@teccart.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

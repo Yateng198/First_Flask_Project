@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}{{ super() }} - Organization{% endblock %}
+
+{% block contents %}
+    <div class="container mt-5">
+        <!-- cards -->
+        <h1 class="row-cols-1 text-center">Principal's Office</h1>
+        <div class="row row-cols-1 row-cols-md-2 mt-3 g-4">
+            <div class="col">
+
+                <div class="card">
+                    <img src="http://www.mca.k12.pa.us/wp/mcaes/wp-content/uploads/sites/3/2016/10/DSC04312-1080x718.jpg"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ms. Suzie Nestico</h5>
+                        <p class="card-text text-muted">School Principal</p>
+                        <p class="card-text">
+                            <a href="#" class="stretched-link text-danger" style="position: relative;">nesticos@teccart.com</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="http://www.mca.k12.pa.us/wp/mcaes/wp-content/uploads/sites/3/2019/09/IMG_0079.jpg"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mrs. Amanda Stepenaskie</h5>
+                        <p class="card-text text-muted">Assistant Principal</p>
+                        <p class="card-text">
+                            <a href="#" class="stretched-link text-danger" style="position: relative;">stepenaskiea@teccart.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cards -->
+    <h2 class="row-cols-1 mt-5 text-center">Program Directors</h2>
+        <!--Table -->
+        <table class="table mt-5 table-striped table-hover text-center">
+            <thead>
+            <tr>
+                {% for head in doc_list[0] %}
+                    <th>{{ head }}</th>
+                {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for rows in doc_list[1:] %}
+                <tr>
+                    {% for data in rows[:3] %}
+                        <td>{{ data }}</td>
+                    {% endfor %}
+                {% for data in rows[3:] %}
+                        <td><a href="mailto: {{ data }}">{{ data }}</a> </td>
+                    {% endfor %}
+                </tr>
+
+            {% endfor %}
+            </tbody>
+        </table>
+
+
+        <!--Table -->
+    </div>
+
+
+
+{% endblock %}

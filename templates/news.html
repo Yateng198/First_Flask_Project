@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}{{ super() }} - News{% endblock %}
+{% block contents %}
+    <div class="container news-list">
+    <!--News cards -->
+        <div class="container my-5">
+            <h1 class="row-cols-1 mt-5 text-center">Teccart News</h1>
+            <div class="row mt-4">
+                {% for news_item in news_list %}
+                    <div class="col-md-4 mb-4">
+
+                        <div class="card h-100 hover-zoom">
+                            <div class="card-body">
+                                <a href="{{ news_item[3] }}">
+                                    <img src="{{ news_item[4] }}" class="card-img-top" alt="">
+                                </a>
+                                <h5 class="card-title mt-3">{{ news_item[0] }}</h5>
+                                <p class="card-text">{{ news_item[2] }}</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ news_item[1] }}</small>
+                                <a href="{{ news_item[3] }}" class="btn btn-primary float-end">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+     <!--News cards -->
+    </div>
+
+
+
+
+{% endblock %}

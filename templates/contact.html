@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}{{ super() }} - News{% endblock %}
+{% block contents %}
+    <!-- First Half - Contact Form -->
+    <div class="container py-5">
+        <h2>Contact Us</h2>
+        <form action="/contact/response" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="fname" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="fname" name="fname" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" name="address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="province" class="form-label">Province</label>
+                        <input type="text" class="form-control" id="province" name="province" required>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="lname" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lname" name="lname" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobile" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" pattern="[0-9]{10}" id="mobile" name="mobile" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="city" class="form-label">City</label>
+                        <input type="tel" class="form-control" id="city" name="city" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="country" name="country" required>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mb-3 text-center">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send</button>
+
+            </div>
+        </form>
+    </div>
+
+    <!-- Second Half - Contact Information -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 3030 Hochelaga, Montréal, Quebec, Canada</p>
+                <p><i class="fas fa-envelope"></i> info@teccart.com</p>
+                <p><i class="fas fa-phone"></i> +1-514-526-2501</p>
+                <p><i class="fas fa-fax"></i> +1-514-526-2501</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Find Us on Google Maps</h3>
+                <a href="https://www.google.com/maps/place/3030+Rue+Hochelaga,+Montr%C3%A9al,+QC+H1W+1G2,+Canada/@45.5404122,-73.5569547,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc91b92e1233081:0x96db5d550f235ffb!8m2!3d45.5404085!4d-73.5547607!16s%2Fg%2F11bw4mx3qk?hl=en">
+                    <img src="/static/location.png" class="img-fluid" alt="" />
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+{% endblock %}
